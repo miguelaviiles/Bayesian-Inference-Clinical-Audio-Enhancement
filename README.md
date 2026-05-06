@@ -35,7 +35,6 @@ src/                               Functional Python modules
   kalman.py                        AR Kalman filter
   particle.py                      SIR particle filter
   info_theory.py                   KSG MI, STFT KL, surprisal
-  wer.py                           jiwer wrapper
 notebooks/                         One notebook per phase
 data/synth/                        Generated figures, JSON metrics, audio samples
   *.png                            Plots used in the presentation
