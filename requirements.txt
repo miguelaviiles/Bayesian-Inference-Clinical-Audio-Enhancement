@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+librosa
+soundfile
+filterpy
+scikit-learn
+jiwer
+tqdm
+faster-whisper

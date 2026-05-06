@@ -1,0 +1,52 @@
+[
+  {
+    "snr_in": -5,
+    "kf_out": -0.65,
+    "pf_out": -0.2,
+    "kf_gain": 4.35,
+    "pf_gain": 4.8,
+    "seg_kf": -1.59,
+    "seg_pf": -0.83,
+    "df": 4.2
+  },
+  {
+    "snr_in": 0,
+    "kf_out": 3.41,
+    "pf_out": 3.78,
+    "kf_gain": 3.41,
+    "pf_gain": 3.78,
+    "seg_kf": 0.78,
+    "seg_pf": 1.35,
+    "df": 4.2
+  },
+  {
+    "snr_in": 5,
+    "kf_out": 7.68,
+    "pf_out": 7.9,
+    "kf_gain": 2.68,
+    "pf_gain": 2.9,
+    "seg_kf": 3.55,
+    "seg_pf": 3.91,
+    "df": 4.2
+  },
+  {
+    "snr_in": 10,
+    "kf_out": 12.13,
+    "pf_out": 12.17,
+    "kf_gain": 2.13,
+    "pf_gain": 2.17,
+    "seg_kf": 6.65,
+    "seg_pf": 6.84,
+    "df": 4.2
+  },
+  {
+    "snr_in": 15,
+    "kf_out": 16.72,
+    "pf_out": 16.07,
+    "kf_gain": 1.72,
+    "pf_gain": 1.07,
+    "seg_kf": 10.04,
+    "seg_pf": 10.1,
+    "df": 4.2
+  }
+]
