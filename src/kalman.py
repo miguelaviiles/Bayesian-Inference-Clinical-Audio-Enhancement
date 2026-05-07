@@ -79,17 +79,3 @@ def compute_snr(clean: np.ndarray, estimated: np.ndarray) -> float:
     noise_est = estimated - clean
     return float(10 * np.log10(np.mean(clean ** 2) / (np.mean(noise_est ** 2) + 1e-30)))
 
-
-def compute_segmental_snr(clean: np.ndarray, estimated: np.ndarray, frame_len: int = 320) -> float:
-    """Frame-level average SNR (dB), ignoring silent frames."""
-    n_frames = len(clean) // frame_len
-    snrs = []
-    for i in range(n_frames):
-        c = clean[i * frame_len:(i + 1) * frame_len] 
-        e = estimated[i * frame_len:(i + 1) * frame_len]
-        p_c = np.mean(c ** 2)
-        if p_c < 1e-10: # Ignore silent frames
-            continue
-        p_n = np.mean((e - c) ** 2) + 1e-30
-        snrs.append(10 * np.log10(p_c / p_n)) # Compute the SNR for the current frame
-    return float(np.mean(snrs)) if snrs else 0.0 # Return the average SNR
